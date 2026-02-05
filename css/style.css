@@ -9004,10 +9004,16 @@ h1, h2, h3, h4, h5,
         opacity: 1; }
         .project .text span {
           color: rgba(255, 255, 255, 0.8); } }
-  .project:hover .overlay, .project:focus .overlay {
-    opacity: .9; }
+.project:hover .overlay, .project:focus .overlay {
+  opacity: .9; }
   .project:hover .text, .project:focus .text {
-    opacity: 1; }
+  opacity: 1; }
+
+/* Graphics section: same tile size and image display as first five */
+#graphics-section .project {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .aside-stretch {
   background: #ffce6c; }

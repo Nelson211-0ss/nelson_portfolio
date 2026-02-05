@@ -65,17 +65,28 @@
 
 	var onePageClick = function() {
 
-
+		// Nav links
 		$(document).on('click', '#ftco-nav a[href^="#"]', function (event) {
 	    event.preventDefault();
-
 	    var href = $.attr(this, 'href');
+	    if ($(href).length) {
+	      $('html, body').animate({
+	        scrollTop: $(href).offset().top - 70
+	      }, 500);
+	    }
+		});
 
-	    $('html, body').animate({
-	        scrollTop: $($.attr(this, 'href')).offset().top - 70
-	    }, 500, function() {
-	    	// window.location.hash = href;
-	    });
+		// Hero and other in-page anchor links (skip nav - already handled above)
+		$(document).on('click', 'a[href^="#"]', function (event) {
+	    if ($(this).closest('#ftco-nav').length) return;
+	    var href = $.attr(this, 'href');
+	    if (href === '#' || href === '#!') return;
+	    if ($(href).length) {
+	      event.preventDefault();
+	      $('html, body').animate({
+	        scrollTop: $(href).offset().top - 70
+	      }, 500);
+	    }
 		});
 
 	};
