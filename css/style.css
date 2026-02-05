@@ -9014,6 +9014,15 @@ h1, h2, h3, h4, h5,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+#graphics-section .project .graphics-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  display: block; }
 
 .aside-stretch {
   background: #ffce6c; }
