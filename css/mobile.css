@@ -35,34 +35,45 @@
 }
 
 .ict-project-card {
-  background: #111111;
-  border: 1px solid #2a2a2a;
-  border-top: 3px solid #ffbd39;
-  padding: 2rem;
+  cursor: default;
+  text-align: left;
   height: 100%;
-}
-
-.ict-project-card h3 {
-  color: #fff;
-  font-size: 20px;
-  margin-bottom: 1rem;
-}
-
-.ict-project-card p {
-  color: #999999;
-  font-size: 15px;
-  line-height: 1.7;
-  margin-bottom: 0.75rem;
-  text-align: justify;
-}
-
-.ict-project-card p:last-child {
   margin-bottom: 0;
 }
 
-.ict-project-card p strong {
-  color: #ffbd39;
+.ict-project-card .icon {
+  margin-bottom: 20px;
+}
+
+.ict-project-card .desc h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.ict-project-card .desc p {
+  color: #999999;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+  text-align: justify;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.ict-project-card .desc p:last-child {
+  margin-bottom: 0;
+}
+
+.ict-project-card .field-label {
+  display: block;
+  color: #fff;
+  font-size: 11px;
   font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
 }
 
 .competency-card {
@@ -73,16 +84,20 @@
 .governance-card {
   cursor: default;
   text-align: left;
-  padding: 2rem 1.5rem;
+  margin-bottom: 0;
+}
+
+.governance-card .icon i[class^="icon-"] {
+  font-size: 60px;
+  line-height: 1;
+  color: #ffbd39;
 }
 
 .governance-card .desc h3 {
-  font-size: 18px !important;
-  text-align: left;
-}
-
-.governance-card .desc h3:after {
-  display: none;
+  font-size: 13px !important;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .governance-card .desc p {
@@ -90,6 +105,8 @@
   font-size: 14px;
   line-height: 1.7;
   text-align: justify;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 .achievement-list li {
@@ -100,6 +117,10 @@
 }
 
 .achievement-list li:last-child {
+  margin-bottom: 0;
+}
+
+#achievements-section .resume-wrap {
   margin-bottom: 0;
 }
 
@@ -116,16 +137,8 @@
 }
 
 @media (max-width: 767.98px) {
-  .ict-project-card {
-    padding: 1.5rem;
-  }
-
-  .ict-project-card h3 {
+  .ict-project-card .desc h4 {
     font-size: 18px;
-  }
-
-  .governance-card {
-    padding: 1.5rem 1.25rem;
   }
 
   .value-proposition-text {
@@ -141,6 +154,56 @@
 }
 
 /* Static fixed header + unified horizontal gutters */
+.ftco-navbar-light .dropdown-menu {
+  background: #111111;
+  border: 1px solid #2a2a2a;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  min-width: 11rem;
+  margin-top: 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.ftco-navbar-light .dropdown-item {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.65rem 1.25rem;
+}
+
+.ftco-navbar-light .dropdown-item:hover,
+.ftco-navbar-light .dropdown-item:focus {
+  background: rgba(255, 189, 57, 0.12);
+  color: #ffbd39;
+}
+
+.ftco-navbar-light .nav-item.dropdown > .nav-link.dropdown-toggle::after {
+  margin-left: 0.35em;
+  vertical-align: 0.15em;
+  border-top-color: rgba(255, 255, 255, 0.6);
+}
+
+.ftco-navbar-light .nav-item.dropdown.show > .nav-link.dropdown-toggle::after,
+.ftco-navbar-light .nav-item.dropdown:hover > .nav-link.dropdown-toggle::after {
+  border-top-color: #ffbd39;
+}
+
+@media (max-width: 991.98px) {
+  .ftco-navbar-light .navbar-nav .dropdown-menu {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    padding: 0 0 0 1rem;
+  }
+
+  .ftco-navbar-light .dropdown-item {
+    padding: 0.5rem 0;
+    font-size: 11px;
+  }
+}
+
 .ftco-navbar-light {
   position: fixed !important;
   top: 0;

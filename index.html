@@ -41,11 +41,16 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>Profile</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experience</span></a></li>
-	          <li class="nav-item"><a href="#competencies-section" class="nav-link"><span>Competencies</span></a></li>
+	          <li class="nav-item dropdown">
+	            <a class="nav-link dropdown-toggle" href="#" id="aboutMeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>About Me</span></a>
+	            <div class="dropdown-menu" aria-labelledby="aboutMeDropdown">
+	              <a class="dropdown-item" href="#about-section">Profile</a>
+	              <a class="dropdown-item" href="#competencies-section">Competences</a>
+	              <a class="dropdown-item" href="#resume-section">Experiences</a>
+	              <a class="dropdown-item" href="#skills-section">Skills</a>
+	            </div>
+	          </li>
 	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
 	          <li class="nav-item"><a href="#graphics-section" class="nav-link"><span>Graphics</span></a></li>
 	          <li class="nav-item"><a href="websites.html" class="nav-link"><span>Websites</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
@@ -65,7 +70,7 @@
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Nelson Ochan Odoch</span></h1>
+			            <h1 class="mb-4 mt-3">I'm <span>Odoch Nelson ochan</span></h1>
 			            <h2 class="mb-4">Network &amp; Systems Administrator</h2>
 			            <p><a href="#contact-section" class="btn btn-primary py-3 px-4">Contact Me</a> <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">View Projects</a></p>
 		            </div>
@@ -330,40 +335,52 @@
           </div>
         </div>
     		<div class="row">
-    			<div class="col-md-6 ftco-animate mb-4">
-    				<div class="ict-project-card">
-    					<h3>Enterprise Network Design and Administration</h3>
-    					<p><strong>Objective:</strong> Design and implement a secure, scalable enterprise network to support NGO operations across multiple office and field locations.</p>
-    					<p><strong>Technologies Used:</strong> Cisco/MikroTik routers and switches, VLAN segmentation, DHCP/DNS servers, site-to-site VPN, firewall appliances, and network monitoring tools.</p>
-    					<p><strong>Responsibilities:</strong> Led network architecture design, configured routing and switching infrastructure, implemented VLAN policies, managed VPN tunnels, and established network security controls and documentation.</p>
-    					<p><strong>Outcomes and Impact:</strong> Achieved reliable connectivity for 50+ users, reduced network downtime by 40%, and established a documented network topology that supports future expansion and audit compliance.</p>
+    			<div class="col-md-6 d-flex ftco-animate mb-4">
+    				<div class="services-1 ict-project-card w-100">
+    					<span class="icon"><i class="flaticon-analysis"></i></span>
+    					<div class="desc">
+    						<h4 class="mb-4">Enterprise Network Design and Administration</h4>
+    						<p><span class="field-label">Objective</span> Design and implement a secure, scalable enterprise network to support NGO operations across multiple office and field locations.</p>
+    						<p><span class="field-label">Technologies Used</span> Cisco/MikroTik routers and switches, VLAN segmentation, DHCP/DNS servers, site-to-site VPN, firewall appliances, and network monitoring tools.</p>
+    						<p><span class="field-label">Responsibilities</span> Led network architecture design, configured routing and switching infrastructure, implemented VLAN policies, managed VPN tunnels, and established network security controls and documentation.</p>
+    						<p><span class="field-label">Outcomes and Impact</span> Achieved reliable connectivity for 50+ users, reduced network downtime by 40%, and established a documented network topology that supports future expansion and audit compliance.</p>
+    					</div>
     				</div>
     			</div>
-    			<div class="col-md-6 ftco-animate mb-4">
-    				<div class="ict-project-card">
-    					<h3>AskMAK AI Support System</h3>
-    					<p><strong>Objective:</strong> Develop an intelligent AI-powered helpdesk system to automate user support queries and improve response times for ICT service requests.</p>
-    					<p><strong>Technologies Used:</strong> Python, REST APIs, Docker, Linux server, PostgreSQL database, and web-based chat interface integration.</p>
-    					<p><strong>Responsibilities:</strong> Architected the system infrastructure, deployed containerized services on Linux, configured database backends, integrated API endpoints, and managed server security and uptime monitoring.</p>
-    					<p><strong>Outcomes and Impact:</strong> Reduced average first-response time for common ICT queries by 60%, freed helpdesk staff to focus on complex incidents, and created a scalable knowledge base for recurring support issues.</p>
+    			<div class="col-md-6 d-flex ftco-animate mb-4">
+    				<div class="services-1 ict-project-card w-100">
+    					<span class="icon"><i class="flaticon-ideas"></i></span>
+    					<div class="desc">
+    						<h4 class="mb-4">AskMAK AI Support System</h4>
+    						<p><span class="field-label">Objective</span> Develop an intelligent AI-powered helpdesk system to automate user support queries and improve response times for ICT service requests.</p>
+    						<p><span class="field-label">Technologies Used</span> Python, REST APIs, Docker, Linux server, PostgreSQL database, and web-based chat interface integration.</p>
+    						<p><span class="field-label">Responsibilities</span> Architected the system infrastructure, deployed containerized services on Linux, configured database backends, integrated API endpoints, and managed server security and uptime monitoring.</p>
+    						<p><span class="field-label">Outcomes and Impact</span> Reduced average first-response time for common ICT queries by 60%, freed helpdesk staff to focus on complex incidents, and created a scalable knowledge base for recurring support issues.</p>
+    					</div>
     				</div>
     			</div>
-    			<div class="col-md-6 ftco-animate mb-4">
-    				<div class="ict-project-card">
-    					<h3>Student Attendance Management System</h3>
-    					<p><strong>Objective:</strong> Build a digital attendance tracking platform for educational institutions to replace manual registers and enable real-time reporting.</p>
-    					<p><strong>Technologies Used:</strong> Web application stack, MySQL/PostgreSQL database, Linux hosting environment, and secure user authentication modules.</p>
-    					<p><strong>Responsibilities:</strong> Designed the database schema, deployed the application on Linux servers, configured user roles and access controls, and provided training and technical support to administrators.</p>
-    					<p><strong>Outcomes and Impact:</strong> Eliminated manual attendance errors, enabled instant reporting for 500+ students across multiple classes, and improved administrative efficiency for school management teams.</p>
+    			<div class="col-md-6 d-flex ftco-animate mb-4">
+    				<div class="services-1 ict-project-card w-100">
+    					<span class="icon"><i class="flaticon-flasks"></i></span>
+    					<div class="desc">
+    						<h4 class="mb-4">Student Attendance Management System</h4>
+    						<p><span class="field-label">Objective</span> Build a digital attendance tracking platform for educational institutions to replace manual registers and enable real-time reporting.</p>
+    						<p><span class="field-label">Technologies Used</span> Web application stack, MySQL/PostgreSQL database, Linux hosting environment, and secure user authentication modules.</p>
+    						<p><span class="field-label">Responsibilities</span> Designed the database schema, deployed the application on Linux servers, configured user roles and access controls, and provided training and technical support to administrators.</p>
+    						<p><span class="field-label">Outcomes and Impact</span> Eliminated manual attendance errors, enabled instant reporting for 500+ students across multiple classes, and improved administrative efficiency for school management teams.</p>
+    					</div>
     				</div>
     			</div>
-    			<div class="col-md-6 ftco-animate mb-4">
-    				<div class="ict-project-card">
-    					<h3>Linux Server and Docker Deployment Projects</h3>
-    					<p><strong>Objective:</strong> Modernize application hosting by migrating legacy services to containerized Linux environments for improved reliability and maintainability.</p>
-    					<p><strong>Technologies Used:</strong> Ubuntu/CentOS Linux, Docker, Docker Compose, Nginx reverse proxy, SSL/TLS certificates, and automated backup scripts.</p>
-    					<p><strong>Responsibilities:</strong> Provisioned and hardened Linux servers, containerized web and database services, configured reverse proxy and SSL, implemented scheduled backups, and documented deployment procedures.</p>
-    					<p><strong>Outcomes and Impact:</strong> Reduced deployment time for new services by 70%, improved system portability across environments, and established reproducible infrastructure-as-code practices for the organization.</p>
+    			<div class="col-md-6 d-flex ftco-animate mb-4">
+    				<div class="services-1 ict-project-card w-100">
+    					<span class="icon"><i class="flaticon-analysis"></i></span>
+    					<div class="desc">
+    						<h4 class="mb-4">Linux Server and Docker Deployment Projects</h4>
+    						<p><span class="field-label">Objective</span> Modernize application hosting by migrating legacy services to containerized Linux environments for improved reliability and maintainability.</p>
+    						<p><span class="field-label">Technologies Used</span> Ubuntu/CentOS Linux, Docker, Docker Compose, Nginx reverse proxy, SSL/TLS certificates, and automated backup scripts.</p>
+    						<p><span class="field-label">Responsibilities</span> Provisioned and hardened Linux servers, containerized web and database services, configured reverse proxy and SSL, implemented scheduled backups, and documented deployment procedures.</p>
+    						<p><span class="field-label">Outcomes and Impact</span> Reduced deployment time for new services by 70%, improved system portability across environments, and established reproducible infrastructure-as-code practices for the organization.</p>
+    					</div>
     				</div>
     			</div>
     		</div>
@@ -688,7 +705,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
             <div class="services-1 governance-card w-100">
-              <span class="icon"><i class="flaticon-analysis"></i></span>
+              <span class="icon"><i class="icon-briefcase"></i></span>
               <div class="desc">
                 <h3 class="mb-3">Asset Management</h3>
                 <p class="mb-0">Maintained comprehensive ICT asset registers tracking hardware serial numbers, warranty status, assigned users, and disposal records. Conducted periodic audits to reconcile physical inventory with digital records, supporting budget planning and donor reporting requirements.</p>
@@ -697,7 +714,7 @@
           </div>
           <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
             <div class="services-1 governance-card w-100">
-              <span class="icon"><i class="flaticon-flasks"></i></span>
+              <span class="icon"><i class="icon-warning"></i></span>
               <div class="desc">
                 <h3 class="mb-3">Incident Reporting</h3>
                 <p class="mb-0">Established structured incident logging and escalation procedures with severity classification, response time targets, and root-cause analysis. Documented resolution steps to build institutional knowledge and reduce repeat incidents across the ICT environment.</p>
@@ -706,7 +723,7 @@
           </div>
           <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
             <div class="services-1 governance-card w-100">
-              <span class="icon"><i class="flaticon-ideas"></i></span>
+              <span class="icon"><i class="icon-file-text"></i></span>
               <div class="desc">
                 <h3 class="mb-3">ICT Policies</h3>
                 <p class="mb-0">Drafted and implemented acceptable use policies, password management standards, and data handling guidelines aligned with organizational values and international best practices. Facilitated staff orientation sessions to ensure policy awareness and compliance.</p>
@@ -715,7 +732,7 @@
           </div>
           <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
             <div class="services-1 governance-card w-100">
-              <span class="icon"><i class="flaticon-analysis"></i></span>
+              <span class="icon"><i class="icon-cloud-upload"></i></span>
               <div class="desc">
                 <h3 class="mb-3">Backup Procedures</h3>
                 <p class="mb-0">Designed and executed automated backup schedules for servers, databases, and critical file shares with offsite replication. Tested restoration procedures quarterly to validate recovery time objectives and ensure business continuity readiness.</p>
@@ -724,7 +741,7 @@
           </div>
           <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
             <div class="services-1 governance-card w-100">
-              <span class="icon"><i class="flaticon-flasks"></i></span>
+              <span class="icon"><i class="icon-person"></i></span>
               <div class="desc">
                 <h3 class="mb-3">User Account Management</h3>
                 <p class="mb-0">Managed full user lifecycle provisioning including onboarding, role-based access assignment, periodic access reviews, and secure offboarding. Enforced least-privilege principles across Active Directory, Microsoft 365, and application-level accounts.</p>
@@ -733,7 +750,7 @@
           </div>
           <div class="col-md-6 col-lg-4 d-flex ftco-animate mb-4">
             <div class="services-1 governance-card w-100">
-              <span class="icon"><i class="flaticon-ideas"></i></span>
+              <span class="icon"><i class="icon-folder-open"></i></span>
               <div class="desc">
                 <h3 class="mb-3">ICT Infrastructure Documentation</h3>
                 <p class="mb-0">Produced and maintained network topology diagrams, server configuration records, IP address allocations, and standard operating procedures. Ensured documentation remained current following infrastructure changes to support knowledge transfer and audit readiness.</p>
@@ -755,7 +772,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-10 ftco-animate">
-            <div class="website-cta-card">
+            <div class="resume-wrap">
               <ul class="website-cta-features achievement-list mb-0">
                 <li><span class="icon-check"></span> Successfully designed and deployed enterprise network infrastructure supporting 50+ users across NGO office and field locations with 99%+ uptime.</li>
                 <li><span class="icon-check"></span> Reduced network downtime by 40% through proactive monitoring, VLAN optimization, and structured incident management processes.</li>

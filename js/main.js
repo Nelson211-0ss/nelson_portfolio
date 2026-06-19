@@ -67,12 +67,20 @@
 
 		// Nav links
 		$(document).on('click', '#ftco-nav a[href^="#"]', function (event) {
-	    event.preventDefault();
 	    var href = $.attr(this, 'href');
+	    if (href === '#' || href === '#!') {
+	      event.preventDefault();
+	      return;
+	    }
+	    event.preventDefault();
 	    if ($(href).length) {
 	      $('html, body').animate({
 	        scrollTop: $(href).offset().top - 70
 	      }, 500);
+	    }
+	    if ($('#ftco-nav').hasClass('show')) {
+	      $('.js-fh5co-nav-toggle').removeClass('active');
+	      $('#ftco-nav').collapse('hide');
 	    }
 		});
 
